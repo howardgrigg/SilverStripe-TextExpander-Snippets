@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>groupInfo</key>
+	<dict>
+		<key>expandAfterMode</key>
+		<integer>0</integer>
+		<key>groupName</key>
+		<string>SilverStripe</string>
+	</dict>
+	<key>snippetsTE2</key>
+	<array>
+		<dict>
+			<key>abbreviation</key>
+			<string>cform,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-29T05:24:07Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>lastUsed</key>
+			<date>2011-09-29T05:25:26Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-29T05:26:52Z</date>
+			<key>plainText</key>
+			<string>function ContactForm() {
+		// Validator::set_javascript_validation_handler('none');
+
+		if($currentPage = DataObject::get_by_id("SiteTree", $this-&gt;ID)){
+
+		$fields = new FieldSet(
+			new TextField('Name'),
+			new EmailField('Email'),
+			new TextareaField('Message'),
+			new HiddenField ('Page', 'Page',
+				$currentPage-&gt;Title
+			)
+		);
+		$actions = new FieldSet( new FormAction('doContactForm', 'Submit'));
+		$validator = new RequiredFields('Email', 'Message');
+
+		return new Form($this, 'ContactForm', $fields, $actions, $validator);
+	}}
+	
+	function doContactForm($data, $form) {
+		
+		// Sets the email to come from the email supplied in the form
+		$From = $data['Email'];
+		// Who to send the email to
+		$To = '%fill:To%';
+		$Subject = '%fill:Subject%';
+		$email = new Email($From, $To, $Subject);
+		
+		// Which template to use
+		$email-&gt;setTemplate('ContactFormEmail');
+		$email-&gt;populateTemplate($data);
+
+		$email-&gt;send();
+
+		$form-&gt;sessionMessage('&lt;h3&gt;Thanks for contacting us. We will endeavour to get in touch with you as soon as possible!&lt;/h3&gt;', 'good');
+		return Director::redirectBack();
+	}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>188CBB34-2F56-4166-88C1-09DBC96E9790</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>getbyid,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-29T04:49:44Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:55:28Z</date>
+			<key>plainText</key>
+			<string>DataObject::get_by_id(
+		'%fill:Object%', // Object
+		'%|', // ID
+		);</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E2B5BAD7-084A-4FF4-8B07-38751493C384</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>getone,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-29T04:48:23Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:55:20Z</date>
+			<key>plainText</key>
+			<string>DataObject::get_one(
+		'%fill:Object%', // Object
+		'%|', // Filter
+		);</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B44A5B78-ECFD-4D08-AA45-1AE06C250DEE</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>get,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-29T04:46:46Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>lastUsed</key>
+			<date>2011-09-29T04:54:39Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:55:10Z</date>
+			<key>plainText</key>
+			<string>DataObject::get(
+		'%fill:Object%', // Object
+		'%|', // Filter
+		'', // Sort
+		'', // Join
+		'' // Limit
+		);</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>84E92CB4-1E07-430A-B9CE-7EADF4C028B5</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ti,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-29T04:44:37Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>lastUsed</key>
+			<date>2011-09-29T04:54:26Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:45:08Z</date>
+			<key>plainText</key>
+			<string>&lt;title&gt;&lt;% if MetaTitle %&gt;$MetaTitle&lt;% else %&gt;$Title&lt;% end_if %&gt; &amp;raquo; %fill:SiteName%&lt;/title&gt;
+$MetaTags(false)</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>B5814722-556F-4073-A580-3C92670F671E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ba,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-29T04:40:48Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:40:51Z</date>
+			<key>plainText</key>
+			<string>&lt;% base_tag %&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>8E72C6F2-9501-435E-B279-F71E8934C60E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>css,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-29T04:39:01Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:39:13Z</date>
+			<key>plainText</key>
+			<string>&lt;% require themedCSS(%fill:name%) %&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>CE32CD9E-DBB0-40B1-8963-EEAD777A4F3C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>hodom,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-29T04:35:08Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:44:08Z</date>
+			<key>plainText</key>
+			<string>$%fill:name%Field = new hasOneDataObjectManager(
+			$this,
+			"%fill:name%",
+			"%fill:name%",
+			array(
+				"%fill:heading%" =&gt; "%fill:heading%"
+			),
+			"getCMSFields_forPopup"
+		);
+
+		$f-&gt;addFieldToTab( "Root.Content.%fill:name%", $%fill:name%Field );</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>BFCDD950-DC9F-4C21-ACF4-A355397B5EEA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>mmdom,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-29T04:21:16Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>lastUsed</key>
+			<date>2011-09-29T04:25:50Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:26:30Z</date>
+			<key>plainText</key>
+			<string>$%fill:name%Field = new ManyManyDataObjectManager(
+			$this,
+			'%fill:name%s',
+			'%fill:name%',
+			array(
+				'%fill:heading%' =&gt; '%fill:heading%'
+			),
+			'getCMSFields_forPopup'
+		);
+		$f-&gt;addFieldToTab( "Root.Content.%fill:name%", $%fill:name%Field );</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>69BBE19F-41B5-47BA-84F7-53B2AEB8CC7E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>fdom,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-29T04:13:33Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:26:50Z</date>
+			<key>plainText</key>
+			<string>$%fill:name%Field  = new FileDataObjectManager(
+			$this, // Controller
+			'%fill:name%s', // Source name
+			'%fill:name%', // Source class
+			'%fill:fileObject%', // File name on DataObject
+			array(
+				'%fill:heading%' =&gt; '%fill:heading%'
+			), // Headings 
+			'getCMSFields_forPopup' // Detail fields (function name or FieldSet object)
+			// Filter clause
+			// Sort clause
+			// Join clause
+		);
+		$f-&gt;addFieldToTab( "Root.Content.%fill:name%", $%fill:name%Field );</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>0A239D77-8D44-41C6-96ED-3A3AF3ABE70E</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>dom,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-29T04:11:01Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>lastUsed</key>
+			<date>2011-09-29T04:27:05Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:31:43Z</date>
+			<key>plainText</key>
+			<string>$%fill:name%Field = new DataObjectManager(
+			$this,
+			"%fill:name%s",
+			"%fill:name%",
+			array(
+				"%fill:heading%" =&gt; "%fill:heading%"
+			),
+			"getCMSFields_forPopup"
+		);
+
+		$f-&gt;addFieldToTab( "Root.Content.%fill:name%", $%fill:name%Field );</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>2B5D1B5A-344C-4271-ADEF-A85031ED4FAA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>hmdom,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-28T07:12:59Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>lastUsed</key>
+			<date>2011-09-28T07:24:24Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:43:46Z</date>
+			<key>plainText</key>
+			<string>$%fill:name%Field = new hasManyDataObjectManager(
+			$this,
+			"%fill:name%s",
+			"%fill:name%",
+			array(
+				"%fill:heading%" =&gt; "%fill:heading%"
+			),
+			"getCMSFields_forPopup"
+		);
+
+		$f-&gt;addFieldToTab( "Root.Content.%fill:name%", $%fill:name%Field );</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>F887E843-36B9-4147-B495-C3F7A3081213</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>pa,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-28T07:09:43Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>lastUsed</key>
+			<date>2011-09-29T05:25:05Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:43:20Z</date>
+			<key>plainText</key>
+			<string>&lt;?php
+class %fill:name% extends Page {
+
+	static $db = array(
+	);
+
+	static $has_one =array(
+	);
+
+	static $has_many =array(
+	);
+
+	static $belongs_many_many = array(
+	);
+
+//	static $icon = 'mysite/images/icons/3col';
+
+	function getCMSFields() {
+		$f = parent::getCMSFields();
+
+		return $f;
+	}
+
+
+}
+
+
+class %fill:name% extends Page_Controller {
+
+
+
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1E46A782-8913-4306-BC97-3AACDA58088D</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>do,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-28T03:47:21Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>lastUsed</key>
+			<date>2011-09-28T07:11:12Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-28T06:59:11Z</date>
+			<key>plainText</key>
+			<string>&lt;?php
+class %fill:name% extends DataObject {
+	 
+	static $db = array(
+	);
+
+	static $has_one =array(
+	);
+
+	static $has_many =array(
+	);
+
+	static $belongs_many_many = array(
+	);
+
+	function getCMSFields_forPopup() {
+		
+		return $f;
+	}
+
+
+}</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E5ACD5B2-0B30-4209-B37C-09E802318FED</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>/url</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-09-26T07:53:59Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>modificationDate</key>
+			<date>2011-09-26T07:54:21Z</date>
+			<key>plainText</key>
+			<string>[url]%|[/url]</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>31201BDE-6D04-43B9-B5EC-37E1DCAF30C7</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>hm,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-08-15T05:46:40Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:42:45Z</date>
+			<key>plainText</key>
+			<string>public static $has_many = array(
+		'%fill:name%s'	=&gt;	'%fill:name%'
+	);</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>5FE960A3-29C3-4336-BE41-DEE931DF9518</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ho,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-08-15T05:45:52Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:43:03Z</date>
+			<key>plainText</key>
+			<string>public static $has_one = array(
+		'%fill:name%'	=&gt;	'%fill:name%'
+	);</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>385F138A-F137-4D83-AFAA-623F4FC67D04</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>db,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-08-15T05:45:36Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-08-15T05:46:29Z</date>
+			<key>plainText</key>
+			<string>	public static $db = array(
+		'%|'	=&gt;	''
+	);</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>1BCF8DD6-66B7-4B9F-BC5C-76F7896CF085</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>in,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-06-30T12:19:44Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-06-30T12:20:07Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:41:02Z</date>
+			<key>plainText</key>
+			<string>&lt;% include %fill:name% %&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>C0087893-FA67-415D-B501-49529E912FC1</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ja,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-06-29T10:37:10Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-06-29T10:39:07Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:40:15Z</date>
+			<key>plainText</key>
+			<string>&lt;% require javascript(mysite/javascript/%fill:name%.js) %&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>3</integer>
+			<key>uuidString</key>
+			<string>E4708428-C90D-4E1B-B22D-D14550BDFAD6</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>cn,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-04-11T06:25:04Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-09-22T10:08:32Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:41:57Z</date>
+			<key>plainText</key>
+			<string>&lt;% control %fill:name% %&gt;
+%|
+&lt;% end_control %&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>18</integer>
+			<key>uuidString</key>
+			<string>9249ECBF-FD1E-445B-907B-E84AD4BE6167</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>if,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-04-11T06:23:00Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-09-22T10:31:22Z</date>
+			<key>modificationDate</key>
+			<date>2011-09-29T04:41:44Z</date>
+			<key>plainText</key>
+			<string>&lt;% if %fill:name% %&gt;
+%|
+&lt;% end_if %&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>9</integer>
+			<key>uuidString</key>
+			<string>D9E42667-2E26-4573-9C13-F3E313F46625</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ec,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-04-11T06:22:36Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-04-11T06:22:36Z</date>
+			<key>plainText</key>
+			<string>&lt;% end_control %&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>E34E3885-A734-47AA-ABEC-9B245F150430</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>ei,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-04-11T06:22:01Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>modificationDate</key>
+			<date>2011-04-11T06:22:01Z</date>
+			<key>plainText</key>
+			<string>&lt;% end_if %&gt;</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>0</integer>
+			<key>uuidString</key>
+			<string>846F015D-6A39-4EFD-AA71-2B35EBAD8DFA</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-04-10T01:26:37Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-09-29T04:41:13Z</date>
+			<key>modificationDate</key>
+			<date>2011-04-11T06:17:07Z</date>
+			<key>plainText</key>
+			<string>&lt;% %| %&gt; </string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>40</integer>
+			<key>uuidString</key>
+			<string>AC171072-8E03-472E-A74C-9875706CA28C</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
+			<string>sss</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-04-10T01:26:14Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-09-29T05:13:16Z</date>
+			<key>modificationDate</key>
+			<date>2011-04-10T01:58:29Z</date>
+			<key>plainText</key>
+			<string>SilverStripe</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>96</integer>
+			<key>uuidString</key>
+			<string>4D25EFBB-2018-4576-9B35-2C394DE0BA06</string>
+		</dict>
+	</array>
+</dict>
+</plist>
