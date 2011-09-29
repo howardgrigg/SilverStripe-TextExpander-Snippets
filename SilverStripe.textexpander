@@ -67,7 +67,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>188CBB34-2F56-4166-88C1-09DBC96E9790</string>
+			<string>ED13EAC3-E1D1-49E7-A7FE-44F9F86C1696</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -90,7 +90,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>E2B5BAD7-084A-4FF4-8B07-38751493C384</string>
+			<string>FF55A3DF-2C26-4FDA-8A46-8BB5D11477F8</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -101,6 +101,8 @@
 			<date>2011-09-29T04:48:23Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>lastUsed</key>
+			<date>2011-09-29T13:20:52Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-29T04:55:20Z</date>
 			<key>plainText</key>
@@ -113,7 +115,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>B44A5B78-ECFD-4D08-AA45-1AE06C250DEE</string>
+			<string>28C560FA-145E-4078-BBFB-94790E06121C</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -141,7 +143,7 @@
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>84E92CB4-1E07-430A-B9CE-7EADF4C028B5</string>
+			<string>D3C9670A-764A-4884-8165-02D91F4E1F95</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -153,18 +155,18 @@
 			<key>flags</key>
 			<integer>0</integer>
 			<key>lastUsed</key>
-			<date>2011-09-29T04:54:26Z</date>
+			<date>2011-09-29T13:17:48Z</date>
 			<key>modificationDate</key>
-			<date>2011-09-29T04:45:08Z</date>
+			<date>2011-09-29T13:17:36Z</date>
 			<key>plainText</key>
-			<string>&lt;title&gt;&lt;% if MetaTitle %&gt;$MetaTitle&lt;% else %&gt;$Title&lt;% end_if %&gt; &amp;raquo; %fill:SiteName%&lt;/title&gt;
+			<string>&lt;title&gt;&lt;%% if MetaTitle %%&gt;$MetaTitle&lt;%% else %%&gt;$Title&lt;%% end_if %%&gt; &amp;raquo; %fill:SiteName%&lt;/title&gt;
 $MetaTags(false)</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>B5814722-556F-4073-A580-3C92670F671E</string>
+			<string>AB4801B5-41C3-4B99-A33D-97C5BFAE0059</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -176,15 +178,15 @@ $MetaTags(false)</string>
 			<key>flags</key>
 			<integer>0</integer>
 			<key>modificationDate</key>
-			<date>2011-09-29T04:40:51Z</date>
+			<date>2011-09-29T13:18:04Z</date>
 			<key>plainText</key>
-			<string>&lt;% base_tag %&gt;</string>
+			<string>&lt;%% base_tag %%&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>8E72C6F2-9501-435E-B279-F71E8934C60E</string>
+			<string>7ECF022E-1E68-44F3-B3CD-90E4F1DF0986</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -195,16 +197,18 @@ $MetaTags(false)</string>
 			<date>2011-09-29T04:39:01Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>lastUsed</key>
+			<date>2011-09-29T13:18:18Z</date>
 			<key>modificationDate</key>
-			<date>2011-09-29T04:39:13Z</date>
+			<date>2011-09-29T13:18:09Z</date>
 			<key>plainText</key>
-			<string>&lt;% require themedCSS(%fill:name%) %&gt;</string>
+			<string>&lt;%% require themedCSS(%fill:name%) %%&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>CE32CD9E-DBB0-40B1-8963-EEAD777A4F3C</string>
+			<string>7E822D2E-9CC5-49CD-9A74-3B66F1AA43F1</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -234,7 +238,7 @@ $MetaTags(false)</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>BFCDD950-DC9F-4C21-ACF4-A355397B5EEA</string>
+			<string>F80DB6D5-7B5B-4577-9DBF-545E57DF53E4</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -265,7 +269,7 @@ $MetaTags(false)</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>69BBE19F-41B5-47BA-84F7-53B2AEB8CC7E</string>
+			<string>88E10849-AFD9-4AB6-9AEA-8C035867CA68</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -298,7 +302,7 @@ $MetaTags(false)</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>0A239D77-8D44-41C6-96ED-3A3AF3ABE70E</string>
+			<string>6A79BDF6-3287-4BCF-8F44-E86C761878E8</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -330,7 +334,7 @@ $MetaTags(false)</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>2B5D1B5A-344C-4271-ADEF-A85031ED4FAA</string>
+			<string>D722CEDC-4606-454D-A8BD-F166AB2D0718</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -362,7 +366,7 @@ $MetaTags(false)</string>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>F887E843-36B9-4147-B495-C3F7A3081213</string>
+			<string>56D609AA-9455-423F-BE19-DF0E1FCD97EA</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -415,7 +419,7 @@ class %fill:name% extends Page_Controller {
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>1E46A782-8913-4306-BC97-3AACDA58088D</string>
+			<string>E80D9104-E9D9-4157-9129-836E38719976</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -458,11 +462,11 @@ class %fill:name% extends DataObject {
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>E5ACD5B2-0B30-4209-B37C-09E802318FED</string>
+			<string>B72FEE2D-6B26-49FC-AB43-E00873D25ABF</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
-			<string>/url</string>
+			<string>url,.</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
 			<key>creationDate</key>
@@ -470,7 +474,7 @@ class %fill:name% extends DataObject {
 			<key>flags</key>
 			<integer>0</integer>
 			<key>modificationDate</key>
-			<date>2011-09-26T07:54:21Z</date>
+			<date>2011-09-29T13:02:14Z</date>
 			<key>plainText</key>
 			<string>[url]%|[/url]</string>
 			<key>snippetType</key>
@@ -478,7 +482,7 @@ class %fill:name% extends DataObject {
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>31201BDE-6D04-43B9-B5EC-37E1DCAF30C7</string>
+			<string>01B3F6E8-9EA0-45BC-AD4B-F90C01996B47</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -502,7 +506,7 @@ class %fill:name% extends DataObject {
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>5FE960A3-29C3-4336-BE41-DEE931DF9518</string>
+			<string>1473B9ED-63F5-4D03-AFA0-AB6C516EFB5A</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -526,7 +530,7 @@ class %fill:name% extends DataObject {
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>385F138A-F137-4D83-AFAA-623F4FC67D04</string>
+			<string>D6D9A30F-294E-4CAB-B6B3-9ECEDAE92A85</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -550,7 +554,7 @@ class %fill:name% extends DataObject {
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>1BCF8DD6-66B7-4B9F-BC5C-76F7896CF085</string>
+			<string>E4DE3F77-76B2-4EA0-8E19-8B7E3075FA11</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -564,17 +568,17 @@ class %fill:name% extends DataObject {
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2011-06-30T12:20:07Z</date>
+			<date>2011-09-29T13:19:06Z</date>
 			<key>modificationDate</key>
-			<date>2011-09-29T04:41:02Z</date>
+			<date>2011-09-29T13:18:58Z</date>
 			<key>plainText</key>
-			<string>&lt;% include %fill:name% %&gt;</string>
+			<string>&lt;%% include %fill:name% %%&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
 			<integer>1</integer>
 			<key>uuidString</key>
-			<string>C0087893-FA67-415D-B501-49529E912FC1</string>
+			<string>186B0504-D2AE-45E8-8A26-4C7472C707ED</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -590,15 +594,15 @@ class %fill:name% extends DataObject {
 			<key>lastUsed</key>
 			<date>2011-06-29T10:39:07Z</date>
 			<key>modificationDate</key>
-			<date>2011-09-29T04:40:15Z</date>
+			<date>2011-09-29T13:19:17Z</date>
 			<key>plainText</key>
-			<string>&lt;% require javascript(mysite/javascript/%fill:name%.js) %&gt;</string>
+			<string>&lt;%% require javascript(mysite/javascript/%fill:name%.js) %%&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
 			<integer>3</integer>
 			<key>uuidString</key>
-			<string>E4708428-C90D-4E1B-B22D-D14550BDFAD6</string>
+			<string>290CC8E6-0FDB-4604-ABFE-1E3CDFC40FDE</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -614,17 +618,17 @@ class %fill:name% extends DataObject {
 			<key>lastUsed</key>
 			<date>2011-09-22T10:08:32Z</date>
 			<key>modificationDate</key>
-			<date>2011-09-29T04:41:57Z</date>
+			<date>2011-09-29T13:19:25Z</date>
 			<key>plainText</key>
-			<string>&lt;% control %fill:name% %&gt;
+			<string>&lt;%% control %fill:name% %%&gt;
 %|
-&lt;% end_control %&gt;</string>
+&lt;%% end_control %%&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
 			<integer>18</integer>
 			<key>uuidString</key>
-			<string>9249ECBF-FD1E-445B-907B-E84AD4BE6167</string>
+			<string>EA4A29BE-F87A-4E6D-87BA-98357754A157</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -640,17 +644,17 @@ class %fill:name% extends DataObject {
 			<key>lastUsed</key>
 			<date>2011-09-22T10:31:22Z</date>
 			<key>modificationDate</key>
-			<date>2011-09-29T04:41:44Z</date>
+			<date>2011-09-29T13:19:32Z</date>
 			<key>plainText</key>
-			<string>&lt;% if %fill:name% %&gt;
+			<string>&lt;%% if %fill:name% %%&gt;
 %|
-&lt;% end_if %&gt;</string>
+&lt;%% end_if %%&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
 			<integer>9</integer>
 			<key>uuidString</key>
-			<string>D9E42667-2E26-4573-9C13-F3E313F46625</string>
+			<string>2C4AD742-1BEA-48E7-9D9A-04EF2BC93748</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -663,16 +667,18 @@ class %fill:name% extends DataObject {
 			<integer>0</integer>
 			<key>label</key>
 			<string></string>
+			<key>lastUsed</key>
+			<date>2011-09-29T13:19:51Z</date>
 			<key>modificationDate</key>
-			<date>2011-04-11T06:22:36Z</date>
+			<date>2011-09-29T13:19:37Z</date>
 			<key>plainText</key>
-			<string>&lt;% end_control %&gt;</string>
+			<string>&lt;%% end_control %%&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>E34E3885-A734-47AA-ABEC-9B245F150430</string>
+			<string>B777910A-A030-4609-8027-2482BA82E606</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -686,15 +692,15 @@ class %fill:name% extends DataObject {
 			<key>label</key>
 			<string></string>
 			<key>modificationDate</key>
-			<date>2011-04-11T06:22:01Z</date>
+			<date>2011-09-29T13:19:40Z</date>
 			<key>plainText</key>
-			<string>&lt;% end_if %&gt;</string>
+			<string>&lt;%% end_if %%&gt;</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
 			<integer>0</integer>
 			<key>uuidString</key>
-			<string>846F015D-6A39-4EFD-AA71-2B35EBAD8DFA</string>
+			<string>B3DD25B0-B8C5-447D-BF81-EA71648BA6E5</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -710,15 +716,15 @@ class %fill:name% extends DataObject {
 			<key>lastUsed</key>
 			<date>2011-09-29T04:41:13Z</date>
 			<key>modificationDate</key>
-			<date>2011-04-11T06:17:07Z</date>
+			<date>2011-09-29T13:19:45Z</date>
 			<key>plainText</key>
-			<string>&lt;% %| %&gt; </string>
+			<string>&lt;%% %| %%&gt; </string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
 			<integer>40</integer>
 			<key>uuidString</key>
-			<string>AC171072-8E03-472E-A74C-9875706CA28C</string>
+			<string>D89EFFAE-555D-4168-B5AF-36ED75451858</string>
 		</dict>
 		<dict>
 			<key>abbreviation</key>
@@ -732,7 +738,7 @@ class %fill:name% extends DataObject {
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2011-09-29T05:13:16Z</date>
+			<date>2011-09-29T13:10:44Z</date>
 			<key>modificationDate</key>
 			<date>2011-04-10T01:58:29Z</date>
 			<key>plainText</key>
@@ -740,9 +746,9 @@ class %fill:name% extends DataObject {
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>96</integer>
+			<integer>97</integer>
 			<key>uuidString</key>
-			<string>4D25EFBB-2018-4576-9B35-2C394DE0BA06</string>
+			<string>2ACBA86E-382E-4C07-A928-347A5404EB27</string>
 		</dict>
 	</array>
 </dict>
