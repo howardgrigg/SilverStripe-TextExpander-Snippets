@@ -220,7 +220,7 @@ $MetaTags(false)</string>
 			<key>flags</key>
 			<integer>0</integer>
 			<key>modificationDate</key>
-			<date>2011-09-29T04:44:08Z</date>
+			<date>2011-10-12T00:30:32Z</date>
 			<key>plainText</key>
 			<string>$%fill:name%Field = new hasOneDataObjectManager(
 			$this,
@@ -252,7 +252,7 @@ $MetaTags(false)</string>
 			<key>lastUsed</key>
 			<date>2011-09-29T04:25:50Z</date>
 			<key>modificationDate</key>
-			<date>2011-09-29T04:26:30Z</date>
+			<date>2011-10-12T00:30:20Z</date>
 			<key>plainText</key>
 			<string>$%fill:name%Field = new ManyManyDataObjectManager(
 			$this,
@@ -314,7 +314,7 @@ $MetaTags(false)</string>
 			<key>flags</key>
 			<integer>0</integer>
 			<key>lastUsed</key>
-			<date>2011-09-29T04:27:05Z</date>
+			<date>2011-10-12T00:23:19Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-29T04:31:43Z</date>
 			<key>plainText</key>
@@ -380,7 +380,7 @@ $MetaTags(false)</string>
 			<key>lastUsed</key>
 			<date>2011-09-29T05:25:05Z</date>
 			<key>modificationDate</key>
-			<date>2011-09-29T04:43:20Z</date>
+			<date>2011-10-12T00:33:55Z</date>
 			<key>plainText</key>
 			<string>&lt;?php
 class %fill:name% extends Page {
@@ -401,7 +401,7 @@ class %fill:name% extends Page {
 
 	function getCMSFields() {
 		$f = parent::getCMSFields();
-
+		$f-&gt;addFieldToTab( 'Root.Content.Main', new XXXXField() );
 		return $f;
 	}
 
@@ -431,9 +431,9 @@ class %fill:name% extends Page_Controller {
 			<key>flags</key>
 			<integer>0</integer>
 			<key>lastUsed</key>
-			<date>2011-09-28T07:11:12Z</date>
+			<date>2011-10-12T00:19:47Z</date>
 			<key>modificationDate</key>
-			<date>2011-09-28T06:59:11Z</date>
+			<date>2011-10-12T00:32:12Z</date>
 			<key>plainText</key>
 			<string>&lt;?php
 class %fill:name% extends DataObject {
@@ -451,7 +451,8 @@ class %fill:name% extends DataObject {
 	);
 
 	function getCMSFields_forPopup() {
-		
+		$f = new FieldSet();
+		$f-&gt;push();
 		return $f;
 	}
 
@@ -473,6 +474,8 @@ class %fill:name% extends DataObject {
 			<date>2011-09-26T07:53:59Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>lastUsed</key>
+			<date>2011-10-07T12:54:34Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-29T13:02:14Z</date>
 			<key>plainText</key>
@@ -495,6 +498,8 @@ class %fill:name% extends DataObject {
 			<integer>0</integer>
 			<key>label</key>
 			<string></string>
+			<key>lastUsed</key>
+			<date>2011-10-12T00:23:35Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-29T04:42:45Z</date>
 			<key>plainText</key>
@@ -519,6 +524,8 @@ class %fill:name% extends DataObject {
 			<integer>0</integer>
 			<key>label</key>
 			<string></string>
+			<key>lastUsed</key>
+			<date>2011-10-12T00:25:17Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-29T04:43:03Z</date>
 			<key>plainText</key>
@@ -738,7 +745,7 @@ class %fill:name% extends DataObject {
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2011-09-29T13:10:44Z</date>
+			<date>2011-10-11T23:25:36Z</date>
 			<key>modificationDate</key>
 			<date>2011-04-10T01:58:29Z</date>
 			<key>plainText</key>
