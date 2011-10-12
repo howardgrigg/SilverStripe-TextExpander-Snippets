@@ -12,6 +12,7 @@ When developing with SilverStripe there are a whole lot of little bits that I fi
  - ec,.		End control
  - ei,.		End If
  - ,.		Generic template block <% %>
+ - cformemail,.	Contact Email Template 	
  
 ## Form fields
  - dom,.	DataObjectManager
