@@ -13,6 +13,32 @@
 	<array>
 		<dict>
 			<key>abbreviation</key>
+			<string>code,.</string>
+			<key>abbreviationMode</key>
+			<integer>0</integer>
+			<key>creationDate</key>
+			<date>2011-10-19T04:25:04Z</date>
+			<key>flags</key>
+			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-10-19T04:25:35Z</date>
+			<key>modificationDate</key>
+			<date>2011-10-19T04:25:25Z</date>
+			<key>plainText</key>
+			<string>[code]
+%|
+[/code]</string>
+			<key>snippetType</key>
+			<integer>0</integer>
+			<key>useCount</key>
+			<integer>1</integer>
+			<key>uuidString</key>
+			<string>53BBD072-3286-4402-9E97-B62E8795FA03</string>
+		</dict>
+		<dict>
+			<key>abbreviation</key>
 			<string>cformemail,.</string>
 			<key>abbreviationMode</key>
 			<integer>0</integer>
@@ -20,6 +46,10 @@
 			<date>2011-10-12T08:57:09Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-10-12T08:58:53Z</date>
 			<key>modificationDate</key>
 			<date>2011-10-12T08:57:26Z</date>
 			<key>plainText</key>
@@ -50,7 +80,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
 			<string>76AEC126-3850-4557-AD39-87F8F33762B5</string>
 		</dict>
@@ -63,6 +93,8 @@
 			<date>2011-09-29T05:24:07Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>lastUsed</key>
 			<date>2011-10-12T08:49:32Z</date>
 			<key>modificationDate</key>
@@ -108,7 +140,7 @@
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
 			<string>ED13EAC3-E1D1-49E7-A7FE-44F9F86C1696</string>
 		</dict>
@@ -121,6 +153,8 @@
 			<date>2011-09-29T04:49:44Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>modificationDate</key>
 			<date>2011-09-29T04:55:28Z</date>
 			<key>plainText</key>
@@ -144,6 +178,8 @@
 			<date>2011-09-29T04:48:23Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>lastUsed</key>
 			<date>2011-09-29T13:20:52Z</date>
 			<key>modificationDate</key>
@@ -169,6 +205,8 @@
 			<date>2011-09-29T04:46:46Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>lastUsed</key>
 			<date>2011-09-29T04:54:39Z</date>
 			<key>modificationDate</key>
@@ -197,6 +235,8 @@
 			<date>2011-09-29T04:44:37Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>lastUsed</key>
 			<date>2011-09-29T13:17:48Z</date>
 			<key>modificationDate</key>
@@ -220,6 +260,8 @@ $MetaTags(false)</string>
 			<date>2011-09-29T04:40:48Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>modificationDate</key>
 			<date>2011-09-29T13:18:04Z</date>
 			<key>plainText</key>
@@ -240,6 +282,8 @@ $MetaTags(false)</string>
 			<date>2011-09-29T04:39:01Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>lastUsed</key>
 			<date>2011-09-29T13:18:18Z</date>
 			<key>modificationDate</key>
@@ -262,6 +306,10 @@ $MetaTags(false)</string>
 			<date>2011-09-29T04:35:08Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-10-21T12:44:52Z</date>
 			<key>modificationDate</key>
 			<date>2011-10-12T00:30:32Z</date>
 			<key>plainText</key>
@@ -292,8 +340,10 @@ $MetaTags(false)</string>
 			<date>2011-09-29T04:21:16Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>lastUsed</key>
-			<date>2011-09-29T04:25:50Z</date>
+			<date>2011-10-21T12:46:37Z</date>
 			<key>modificationDate</key>
 			<date>2011-10-12T00:30:20Z</date>
 			<key>plainText</key>
@@ -323,6 +373,10 @@ $MetaTags(false)</string>
 			<date>2011-09-29T04:13:33Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
+			<key>lastUsed</key>
+			<date>2011-10-21T12:48:34Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-29T04:26:50Z</date>
 			<key>plainText</key>
@@ -356,8 +410,10 @@ $MetaTags(false)</string>
 			<date>2011-09-29T04:11:01Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>lastUsed</key>
-			<date>2011-10-12T00:36:00Z</date>
+			<date>2011-10-21T12:37:10Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-29T04:31:43Z</date>
 			<key>plainText</key>
@@ -375,7 +431,7 @@ $MetaTags(false)</string>
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>3</integer>
 			<key>uuidString</key>
 			<string>D722CEDC-4606-454D-A8BD-F166AB2D0718</string>
 		</dict>
@@ -388,8 +444,10 @@ $MetaTags(false)</string>
 			<date>2011-09-28T07:12:59Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>lastUsed</key>
-			<date>2011-09-28T07:24:24Z</date>
+			<date>2011-10-21T12:42:08Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-29T04:43:46Z</date>
 			<key>plainText</key>
@@ -420,10 +478,12 @@ $MetaTags(false)</string>
 			<date>2011-09-28T07:09:43Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>lastUsed</key>
-			<date>2011-10-12T00:36:07Z</date>
+			<date>2011-10-25T12:25:11Z</date>
 			<key>modificationDate</key>
-			<date>2011-10-12T00:33:55Z</date>
+			<date>2011-10-25T12:41:08Z</date>
 			<key>plainText</key>
 			<string>&lt;?php
 class %fill:name% extends Page {
@@ -452,7 +512,7 @@ class %fill:name% extends Page {
 }
 
 
-class %fill:name% extends Page_Controller {
+class %fill:name%_Controller extends Page_Controller {
 
 
 
@@ -460,7 +520,7 @@ class %fill:name% extends Page_Controller {
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
 			<string>E80D9104-E9D9-4157-9129-836E38719976</string>
 		</dict>
@@ -473,8 +533,10 @@ class %fill:name% extends Page_Controller {
 			<date>2011-09-28T03:47:21Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>lastUsed</key>
-			<date>2011-10-12T00:36:19Z</date>
+			<date>2011-10-25T12:19:15Z</date>
 			<key>modificationDate</key>
 			<date>2011-10-12T00:32:12Z</date>
 			<key>plainText</key>
@@ -504,7 +566,7 @@ class %fill:name% extends DataObject {
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>uuidString</key>
 			<string>B72FEE2D-6B26-49FC-AB43-E00873D25ABF</string>
 		</dict>
@@ -517,8 +579,10 @@ class %fill:name% extends DataObject {
 			<date>2011-09-26T07:53:59Z</date>
 			<key>flags</key>
 			<integer>0</integer>
+			<key>label</key>
+			<string></string>
 			<key>lastUsed</key>
-			<date>2011-10-07T12:54:34Z</date>
+			<date>2011-10-25T10:30:37Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-29T13:02:14Z</date>
 			<key>plainText</key>
@@ -526,7 +590,7 @@ class %fill:name% extends DataObject {
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
 			<string>01B3F6E8-9EA0-45BC-AD4B-F90C01996B47</string>
 		</dict>
@@ -552,7 +616,7 @@ class %fill:name% extends DataObject {
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
 			<string>1473B9ED-63F5-4D03-AFA0-AB6C516EFB5A</string>
 		</dict>
@@ -578,7 +642,7 @@ class %fill:name% extends DataObject {
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>0</integer>
+			<integer>1</integer>
 			<key>uuidString</key>
 			<string>D6D9A30F-294E-4CAB-B6B3-9ECEDAE92A85</string>
 		</dict>
@@ -764,7 +828,7 @@ class %fill:name% extends DataObject {
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2011-09-29T04:41:13Z</date>
+			<date>2011-10-12T08:59:06Z</date>
 			<key>modificationDate</key>
 			<date>2011-09-29T13:19:45Z</date>
 			<key>plainText</key>
@@ -772,7 +836,7 @@ class %fill:name% extends DataObject {
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>40</integer>
+			<integer>41</integer>
 			<key>uuidString</key>
 			<string>D89EFFAE-555D-4168-B5AF-36ED75451858</string>
 		</dict>
@@ -788,7 +852,7 @@ class %fill:name% extends DataObject {
 			<key>label</key>
 			<string></string>
 			<key>lastUsed</key>
-			<date>2011-10-12T03:27:17Z</date>
+			<date>2011-10-25T10:44:50Z</date>
 			<key>modificationDate</key>
 			<date>2011-04-10T01:58:29Z</date>
 			<key>plainText</key>
@@ -796,7 +860,7 @@ class %fill:name% extends DataObject {
 			<key>snippetType</key>
 			<integer>0</integer>
 			<key>useCount</key>
-			<integer>97</integer>
+			<integer>168</integer>
 			<key>uuidString</key>
 			<string>2ACBA86E-382E-4C07-A928-347A5404EB27</string>
 		</dict>
